@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
 * {
   font-family: "Karla", sans-serif;
   font-size: 16px;
@@ -27,6 +29,18 @@ body {
 
 .dollar-amt {
     font-size: 25px;
+}
+
+.span-per-month {
+  /* margin-bottom: 20px; */
+  /* padding-bottom: 20px; */
+  /* padding-top: 20px;
+  margin-top: 20px; */
+
+  border-style: solid;
+  vertical-align: middle;
+
+  /* text-align: center; */
 }
 
 button {
