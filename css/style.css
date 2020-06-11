@@ -3,32 +3,88 @@
 * {
   font-family: "Karla", sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
-body {
-  width: 1440px;
-}
 
+/* body {
+  max-width: 1440px;
+} */
 .grid-container {
-  display: grid;
-  width: 650px;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0 auto;
-  /* grid-gap: 20px; */
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
-  0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+  padding: 0px 0px;
 }
 
-.grid-container > div {
-    padding: 40px;
+.text-spacing {
+  line-height: 1.6;
 }
 
 .community {
-  grid-column: 1/3;
+  padding: 0px 0px;
+}
+
+.subscription {
+  /* padding: 0px 0px; */
+  overflow: hidden;
+  /* border-style: dotted; */
+}
+
+.why-us {
+  /* padding:  0px 0px; */
+  overflow: hidden;
+  /* height: auto; */
+  /* border-style: dotted; */
+}
+
+.sighnUp-button {
+  display: inline-block;
+  width: 250px;
+  height: 50px;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 650px) {
+  .grid-container {
+    display: grid;
+    /* width: 650px; */
+    /* width: 100%; */
+    max-width: 650px;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 1fr 660px; */
+    margin: 0 auto;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+      0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    
+  }
+  .grid-container > div {
+    padding: 40px;
+  }
+
+  .community {
+    grid-column: 1/3;
+  }
+}
+
+/* 
+.subscription {
+  width: 100%;
+}
+
+.why-us {
+  width: 100%;
+} */
+
+.community-font {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .dollar-amt {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .span-per-month {
@@ -37,18 +93,14 @@ body {
   /* padding-top: 20px;
   margin-top: 20px; */
 
-  border-style: solid;
-  vertical-align: middle;
+  /* border-style: solid; */
+  /* vertical-align: middle; */
 
   /* text-align: center; */
+  display: flex;
+  align-items: center;
 }
 
-button {
-  width: 250px;
-  height: 50px;
-  color: white;
-  margin-top: 20px;
-}
 
 
 .color-cyan {
@@ -77,9 +129,11 @@ button {
 
 .color-gray {
   color: hsl(218, 22%, 67%);
+  /* color: hsl(204, 43%, 93%); */
 }
 .color-lt-gray {
   color: hsl(183, 60%, 80%);
+  /* color: hsl(204, 43%, 93%); */
 }
 
 .attribution {
